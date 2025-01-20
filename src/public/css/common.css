@@ -1,0 +1,124 @@
+/* PC（1400px以上1540px以下）のスタイル */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    
+}
+    .header {
+        background-color: #000;
+        height: 80px;
+    }
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 0 10px;
+    }
+
+    /* img { */
+       
+        /* width: 370px; */
+    /* } */
+    .search-form__input {
+        width: 500px;
+        /* padding: 10px; */
+        height: 45px;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    input::placeholder {
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+            /* align-items: center; */
+          
+            
+    }
+
+    
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+        
+    }
+    .btn {
+        color: #fff;
+        background-color: #000;
+        border: none;
+        width: 135px;
+        font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            margin-left: 5px;
+            cursor: pointer;
+            
+        
+    }
+    .sell-btn {
+        color: #000;
+        background-color: #fff;
+        width: 90px;
+        /* height: 45px; */
+        border-radius: 4px;
+        /* padding: 5px 0; */
+        /* font-family: Inter; */
+            /* font-size: 24px; */
+            /* font-weight: 400; */
+    }
+        /*.container {
+            width: 680px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 100px;
+        }
+            */
+
+
+/* タブレット（768px以上850px以下）のスタイル */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .header__inner {
+         display: grid; 
+         grid-template-columns: 1fr 1fr 1fr; 
+         padding:10px;
+     
+    }
+     .header__logo {
+        display: block;
+        width: 200px;
+        grid-column: 1;
+    }
+    img {
+        width: 100%;
+    }
+    .search-form__input {
+        width: 230px;
+        display: block;
+        /* grid-column: 2; */
+        margin-left: 15px;
+    /* .container { */
+    /* padding: 20px; */
+    }
+    input::placeholder {
+        font-size: 20px;
+    }
+ nav { 
+        /* margin-right: 35px; */
+        display:block;
+        grid-column: 3;
+    }
+        
+    ul {
+    margin-right: 100px;
+    width: 200px;
+    }
+        
+            
+    
+    .btn {
+        font-size: 13px;
+        width: 80px;
+        
+    }
+}
+
