@@ -26,7 +26,7 @@ h1 {
     border-radius: 4px;
     margin-bottom: 40px;
 }
-.login-btn {
+.register-btn {
     width: 685px;
     height: 65px;
     border: none;
@@ -34,7 +34,7 @@ h1 {
     background-color: #ff5555;
     color: #fff;
     cursor: pointer;
-    margin-top: 40px;
+     margin-top: 30px; 
     font-family: Inter;
         font-size: 26px;
         font-weight: 700;
