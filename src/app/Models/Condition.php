@@ -11,5 +11,5 @@ class Condition extends Model
     protected $fillable = [
         'content'
     ];
-    // リレーションはあとで
+    
 }

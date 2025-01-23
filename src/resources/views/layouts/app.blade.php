@@ -13,6 +13,7 @@
             <a href="" class="header__logo"><img src="{{ asset('images/CoachTech_White 1.png') }}
             " alt="" class="">
             </a>
+            
              <!-- ログイン・登録画面ではナビゲーションを非表示 -->
         @if (!Request::is('<auth>login') && !Request::is('auth/register'))
             <form action="" class="search-form" method="">
@@ -40,6 +41,8 @@
 
         
         @yield('content')
+
+        
     </main>    
    
 
