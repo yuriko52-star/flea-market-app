@@ -7,119 +7,89 @@ body {
 .header {
 
     background-color: #000;
-    height: 80px;
+    height: 85px;
 }
 
 .header__inner {
-    display: flex;
-    justify-content: space-between;
-     align-items: center; 
-    /* padding: 10px 10px 0 10px; */
-   /* padding-top: 15px; */
-}
- ul {
-     display: flex;
     
- }
+   margin: 0 auto;
+     padding: 20px 15px; 
+     
+   max-width: 1540px;
+}
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header__logo {
+    width: 30vw;
+}
+img {
+    width: 100%;
+}
+.search-form__input {
+    width: 30vw;
+     padding: 10px 20px; 
+    
+      margin-left: 2%;  
+    
+        height: 25px;
+        border-radius: 5px;
+        
+       
+        margin-bottom: 5px;
+}
 
- li {
-     list-style: none;
-   
+input::placeholder {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
 
- }
+}
+.button-item {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+     margin-left: 2%; 
+}
+ 
+ 
+
+ 
+     
  .btn {
     color: #fff;
         background-color: #000;
         border: none;
+         font-size: 18px; 
         font-family: Inter;
         font-weight: 400;
-            /* margin-right: 20px; */
+        
             cursor: pointer;
             
  }
   .sell-btn {
       color: #000;
       background-color: #fff;
-    /* padding-top: 10px; */
-    
+       
       border-radius: 4px;
-      /* width: 90px; */
+      
 
   }
 @media screen and (min-width: 1400px) and (max-width: 1540px)
  {
-    /*body {
-            
-            margin: 0 auto;
-        }
- 
-
-    
-    .header {
-       
-        background-color: #000;
-        height: 80px;
-       
-    }
-    .header__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 10px 0 10px;
-    }
-*/
-   
-    .search-form__input {
-        width: 500px;
-         padding-top: 15px; 
-        height: 25px;
-        border-radius: 5px;
-        display: block;
-        padding-left: 30px;
-        margin-bottom: 5px;
-       
-    }
-    input::placeholder {
-        color: #000;
-        font-family: Inter;
-        font-size: 24px;
-        font-weight: 400;
-        
-}
-
-    
-   /* ul {
-        display: flex;
-    }
-    li {
-        list-style: none;
-        
-    }
-        */
-    .btn {
-        /*color: #fff;
-        background-color: #000;
-        border: none;
-        */
+   .btn {
+      
         font-size: 24px;
         width: 135px;
         padding-top: 5px;
         margin-right: 20px;
-        /*font-family: Inter;
-           
-            font-weight: 400;
-            margin-left: 5px;
-            cursor: pointer;
-            */
-        
     }
     .sell-btn {
-        /*color: #000;
-        background-color: #fff;
         
-        
-        border-radius: 4px;
-        */
         width: 90px;
         margin-bottom: 10px;
         padding-top:5px;
@@ -130,55 +100,17 @@ body {
 
 /* タブレット（768px以上850px以下）のスタイル */
 @media screen and (min-width: 768px) and (max-width: 850px) {
-    .header__inner { 
-        color: #000;
-        
-         display: grid; 
-         grid-template-columns: 1fr 1fr 1fr; 
-         
-        padding: 10px 10px 0 10px;
-     
-     } 
- .header__logo {
-        /* display: block; */
-         width: 200px; 
-        /* height: 30px; */
-       /* margin-bottom: 5px; */
-        /* grid-column: 1; */
-    }
+   
+
     
-    img {
-        width: 100%;
-    }
-        
-    .search-form__input {
-        width: 200px;
-        display: block;
-        /* grid-column: 2; */
-        margin-left: 50px;
-    
-     padding: 10px 20px; 
-    }
     input::placeholder {
         font-size: 20px;
     }
- nav { 
-        /* margin-right: 30px; */
-        /* display:block; */
-        grid-column: 3;
-    }
-        
-    ul {
-    margin-right: 150px;
-    /* width: 200px; */
-    }
-        
-            
-    
-    .btn {
+
+ .btn {
         font-size: 13px;
         width: 80px;
-         /* margin-right: 5px;  */
+        
         
     }
      .sell-btn {

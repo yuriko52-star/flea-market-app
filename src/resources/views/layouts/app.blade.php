@@ -10,29 +10,36 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <a href="" class="header__logo"><img src="{{ asset('images/CoachTech_White 1.png') }}
+            <div class="header-utilities">
+            <a href="" class="header__logo">
+                <img src="{{ asset('images/CoachTech_White 1.png') }}
             " alt="" class="">
             </a>
             
              <!-- ログイン・登録画面ではナビゲーションを非表示 -->
-        @if (!Request::is('<auth>login') && !Request::is('auth/register'))
+            <!-- @if (!Request::is('<auth>login') && !Request::is('auth/register')) -->
             <form action="" class="search-form" method="">
                 <input type="text" class="search-form__input" placeholder="なにをお探しですか？">
             </form>
-            <nav>
-                <ul>
-                    <li><form action="" class="" method="">
-                        <button class="btn">ログアウト</button>
-                    </form></li>
-                    <li><form action="" class="" method="">
-                        <button class="btn">マイページ</button>
-                    </form></li>
-                    <li><form action="" class="" method="">
-                        <button class=" btn sell-btn">出品</button>
-                    </form></li>
-                </ul>
-            </nav>
-            @endif
+            
+            <div class="button-item">
+                <form action="" class="" method="">
+                    <button class="btn">ログアウト</button>
+                </form>
+                    
+                
+                    
+                <form action="" class="" method="">
+                    <button class="btn">マイページ</button>
+                </form>
+                
+                <form action="" class="" method="">
+                    <button class=" btn sell-btn">出品</button>
+                </form>
+            </div>
+            
+            <!-- @endif -->
+            </div>
         </div>
         
     </header>
